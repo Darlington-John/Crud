@@ -1,0 +1,41 @@
+.InputContainer {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2E2E2E;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #4D4D4D;
+    font-size: 14px;
+    color: #fff;
+}
+
+.Input:focus {
+    outline: none;
+    border: 1px solid #F7EB0A;
+}
+
+.Input::placeholder {
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.InputIcon {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

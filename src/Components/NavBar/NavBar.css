@@ -1,0 +1,255 @@
+.NavBar {
+    display: flex;
+    width: 890px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    border-radius: 1000px;
+    opacity: 100%;
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.35);
+    border: 1px solid #2A2A2A;
+    background-image: linear-gradient( rgb(52, 52, 52), rgb(0, 0, 0));
+    z-index: 100000;
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 400px;
+}
+
+.Links a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.Links a:hover:not(.launch) {
+    color: #F7EB0A;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.Nav {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.launch {
+    padding: 8px 16px;
+    align-items: center;
+    background-color: #404040;
+    border-radius: 1000px;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.launch:hover {
+    background-color: #F7EB0A;
+    color: #000000;
+}
+
+.BarsIcon {
+    display: none;
+    cursor: pointer;
+}
+
+.Overlay {
+    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #05CCB9;
+    overflow-x: hidden;
+    transition: width 0.5s
+}
+
+.Overlay-content {
+    position: relative;
+    top: 15%;
+    width: auto;
+    background-color: #04ecd5;
+    margin: 0px 35px 0px 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.Overlay a {
+    padding: 14px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #00000093;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #000000;
+    font-weight: bold;
+}
+
+.Overlay a:hover,
+.Overlay a:focus {
+    color: #f1f1f1;
+}
+
+@media screen and (max-width: 890px) {
+    .NavBar {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #151515;
+        border-radius: 1000px;
+        position: fixed;
+        top: 18px;
+        box-sizing: border-box;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.35);
+    }
+    .Links {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        gap: 100px;
+        position: relative;
+    }
+    .Links a {
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .Links a:hover:not(.launch) {
+        color: #F7EB0A;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .Links a:not(.launch, .Logo) {
+        display: flex;
+    }
+    .Nav {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .Links button {
+        border-radius: 50%;
+        border: none;
+        text-align: center;
+    }
+    .launch {
+        position: absolute;
+        right: 10px;
+        top: 21%;
+        padding: 8px 16px;
+        align-items: center;
+        background-color: #404040;
+        border-radius: 1000px;
+        transition: all 0.3s;
+        color: #fff;
+    }
+    .launch:hover {
+        background-color: #F7EB0A;
+        color: #000000;
+    }
+    .BarsIcon {
+        display: none;
+        cursor: pointer;
+        float: right;
+        position: absolute;
+        top: 27%;
+        right: 10px;
+        background-color: #04ecd5;
+        width: 100px;
+        height: 100px;
+    }
+    .Overlay {
+        display: block;
+    }
+    .Nave {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .Links {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        gap: 150px;
+    }
+    .launch {
+        position: absolute;
+        right: 10px;
+        top: 21%;
+        padding: 8px 16px;
+        align-items: center;
+        background-color: #404040;
+        border-radius: 1000px;
+        transition: all 0.3s;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .Links {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        gap: 20px;
+    }
+    .launch {
+        position: absolute;
+        right: 10px;
+        top: 21%;
+        padding: 8px 16px;
+        align-items: center;
+        background-color: #404040;
+        border-radius: 1000px;
+        transition: all 0.3s;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Links {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        gap: 100%;
+        position: relative;
+    }
+    .Links a:not(.launch, .Logo) {
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+    .launch {
+        position: absolute;
+        right: 10px;
+        top: 21%;
+        padding: 8px 16px;
+        align-items: center;
+        background-color: #404040;
+        border-radius: 1000px;
+        transition: all 0.3s;
+        color: #fff;
+    }
+}

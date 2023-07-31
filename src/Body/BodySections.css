@@ -1,0 +1,254 @@
+/* Wallet Section styles */
+
+.WalletContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.Wallet {
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.Wallet h1 {
+    width: 100%;
+    font-size: 43px;
+    font-weight: 600px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Wallet p {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+}
+
+.CardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 420px) {
+    .WalletContainer {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        padding: 100px 10px 10px 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Wallet {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .Wallet h1 {
+        width: 100%;
+        font-size: 23px;
+        font-weight: 600px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .Wallet p {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 18px;
+    }
+    .CardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .WalletContainer {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        padding: 100px 10px 10px 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Wallet {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .Wallet h1 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 600px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .Wallet p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 18px;
+    }
+    .CardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+
+/* ManageAssets Section styles */
+
+.ManageAssets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 64px;
+    padding-bottom: 200px;
+}
+
+.FeaturesManageAssets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.AssetsInAplace {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 418px;
+}
+
+.AssetsInAplace h1 {
+    font-size: 43px;
+}
+
+.AssetsInAplace p {
+    font-size: 17px;
+}
+
+.AssetCardContainer {
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .ManageAssets {
+        padding: 25px;
+    }
+    .AssetsInAplace h1 {
+        font-size: 24px;
+    }
+    .AssetsInAplace p {
+        font-size: 14px;
+    }
+    .FeaturesCard {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .FeaturesCard p {
+        font-size: 14px;
+    }
+    .FeaturesCard h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .FeaturesManageAssets {
+        padding: 25px;
+    }
+    .AssetCardContainer {
+        width: 100%;
+    }
+}
+
+
+/* GetStarted Section styles */
+
+.AssetCardContainer {
+    display: flex;
+}
+
+.AssetCard {
+    min-height: 400px;
+}
+
+@media screen and (max-width: 500px) {
+    .ManageAssets {
+        padding: 50px;
+    }
+    .FeaturesCard {
+        padding-bottom: 50px;
+    }
+    .FeaturesCard p {
+        font-size: 14px;
+    }
+    .FeaturesCard h1 {
+        font-size: 24px;
+        text-align: center;
+        color: #c32323;
+    }
+    .AssetsInAplace h1 {
+        font-size: 24px;
+    }
+    .AssetsInAplace p {
+        font-size: 14px;
+    }
+    .AssetsInAplace {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+    }
+}
+
+
+/* Wallet Section styles */
